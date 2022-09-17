@@ -1,0 +1,100 @@
+h1 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(56, 56, 56);
+    font-family: 'Source Serif Pro', serif;
+}
+
+.carrusel__imgs img{
+    width: 400px;
+    height: 260px;
+    border: 3px solid rgb(56, 56, 56);
+    margin: 0;
+    object-fit: contain;
+    background-color: rgb(56, 56, 56);
+    padding: 0;
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+.carrusel__imgs{
+    position: absolute;
+    top: 250px;
+    gap: 10px;
+    overflow-x:visible;
+    height: 300px;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.carrusel{
+    
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel__flechas{
+    height: 260px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: dotted;
+    
+}
+
+.carrusel--expo2{
+    
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel__imgs--expo2{
+    position: absolute;
+    top: 800px;
+    gap: 10px;
+    overflow-x:visible;
+    height: 300px;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.carrusel__imgs--expo2 img{
+    width: 400px;
+    height: 260px;
+    border: 3px solid rgb(56, 56, 56);
+    margin: 0;
+    object-fit:contain;
+    background-color: rgb(56, 56, 56);
+    padding: 0;
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+main{
+    height: 1300px;
+}
+
+.posicion{
+    position: absolute;
+    top: 700px;
+    text-align: center;
+    width: 100%;
+}

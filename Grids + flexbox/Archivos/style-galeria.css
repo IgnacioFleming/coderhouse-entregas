@@ -1,0 +1,141 @@
+main div{
+    position: relative;
+    top: 200px;
+    height: 100px;
+    line-height: 100px;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#gal-2022{
+    position: relative;
+    top: 800px;
+}
+
+#gal-2021{
+    position: relative;
+    top: 950px;
+}
+
+#gal-2020{
+    position: relative;
+    top: 1063px;
+}
+
+#gal-2019{
+    position: relative;
+    top: 1195px;
+}
+
+
+
+div p{
+    line-height: 30px;
+    width:1000px ;
+    position: relative;
+    left: 183px;
+}
+.Section__Body--Largo{
+    font-size: 14px;
+    color: rgb(56, 56, 56);
+    font-weight: 550;
+    text-align: left;
+}
+
+section h2{
+    position:relative;
+    left:183px;
+}
+
+section img{
+    position: relative;
+    top: 30px;
+    margin-right: 60px;
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.Section--Singleimg{
+    position: relative;
+    left: 222px;
+    top: 50px;
+}
+
+.Section--Doubleimg{
+    position: relative;
+    left: 222px;
+    margin-right: 145px;
+    top: 50px;
+}
+
+.section__label--singleimg{
+    position: relative;
+    top: 65px;
+    right: 40px;
+}
+
+#label__MiPiel{
+    position: relative;
+    top: 45px;
+    left: 350px;
+    display: block;
+}
+#label__Performance{
+    position: relative;
+    top: 27px;
+    left: 840px;
+    display: block;
+}
+
+#TamañoMain__Fotos{
+    height: 3200px;
+}
+
+.label--gal2020-1{
+    display: inline-block;
+    position: relative;
+    top: 47px;
+    left: 340px;
+}
+
+.label--gal2020-2{
+    display: inline-block;
+    position: relative;
+    top: 47px;
+    left: 610px;
+    margin-right: 265px;
+}
+
+.Section--Tripleimg{
+
+    position: relative;
+    top: 50px;
+}
+
+.label--gal2019-img3{
+    position: relative;
+    top: -29.5px;
+}
+
+.label--gal2019-1{
+    display: inline-block;
+    position: relative;
+    top: 27px;
+    left: 95px;
+    margin-right: 160px;
+}
+
+.label--gal2019-2{
+    display: inline-block;
+    position: relative;
+    top: -33px;
+    left: 225px;
+    margin-right: 265px;
+}
+.gal2019--posic{
+    position: relative;
+    top: 21px;
+}

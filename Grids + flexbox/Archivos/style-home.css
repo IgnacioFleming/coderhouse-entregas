@@ -1,0 +1,17 @@
+aside{
+    grid-area: aside;
+    width: 603px;
+    height: 400px;
+}
+article{
+    grid-area: article;
+    width: 960px;
+    height: 400px;
+    margin:0px;
+    padding: 0;
+}
+
+
+article p{
+    text-align:justify;
+}
