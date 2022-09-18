@@ -108,28 +108,28 @@ footer div{
     font-weight: 600;
 }
 
-.Section__Title{
+.section__title{
     text-align: center;
     font-size: xx-large;
     color: rgb(73, 73, 73);
 }
-.Section__Body{
+.section__body{
    
     font-size: 15px;
     color: rgb(56, 56, 56);
     font-weight: 550;
 
 }
-.EncabezadosFuente{
+.encabezadosFuente{
     font-family: 'Merriweather', serif;
 }
 
-.CuerpoFuente{
+.cuerpoFuente{
     font-family: 'Source Serif Pro', serif;
 
 }
 
-.CuerpoFuente--Main{
+.cuerpoFuente--main{
     font-family: 'Source Serif Pro', serif;
     font-size:40px;
     font-weight: 700;
