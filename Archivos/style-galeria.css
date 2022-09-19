@@ -1,141 +1,82 @@
-main div{
-    position: relative;
-    top: 200px;
-    height: 100px;
-    line-height: 100px;
-}
-body{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-#gal-2022{
-    position: relative;
-    top: 800px;
+#grid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 100px auto 150px;
 }
 
-#gal-2021{
-    position: relative;
-    top: 950px;
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: navigation;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer{
+    grid-area: footer;
 }
 
-#gal-2020{
-    position: relative;
-    top: 1063px;
-}
-
-#gal-2019{
-    position: relative;
-    top: 1195px;
-}
-
-
-
-div p{
+main p{
     line-height: 30px;
-    width:1000px ;
-    position: relative;
-    left: 183px;
+    text-align: justify;
+
 }
-.Section__Body--Largo{
+.section__body--largo{
     font-size: 14px;
-    color: rgb(56, 56, 56);
+    color: rgb(37, 27, 27);
     font-weight: 550;
     text-align: left;
 }
-
-section h2{
-    position:relative;
-    left:183px;
+main img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: rgb(228, 220, 208);
+    border: 3px solid;
+}
+label{
+    
+    align-self: flex-end;
 }
 
-section img{
-    position: relative;
-    top: 30px;
-    margin-right: 60px;
-    margin-left: 70px;
-    overflow: hidden;
+main>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main div div{
+    display: flex;
+    flex-direction: column;
 }
 
-.Section--Singleimg{
-    position: relative;
-    left: 222px;
-    top: 50px;
+main div div label{
+    justify-self: flex-end;
 }
 
-.Section--Doubleimg{
-    position: relative;
-    left: 222px;
-    margin-right: 145px;
-    top: 50px;
-}
+@media screen and (min-width:768px) {
+    
+    #grid{
+        display: grid;
+        grid-template-areas: 
+            "header navigation"
+            "main main"
+            "footer footer"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 120px auto 150px;
+    }
 
-.section__label--singleimg{
-    position: relative;
-    top: 65px;
-    right: 40px;
-}
-
-#label__MiPiel{
-    position: relative;
-    top: 45px;
-    left: 350px;
-    display: block;
-}
-#label__Performance{
-    position: relative;
-    top: 27px;
-    left: 840px;
-    display: block;
-}
-
-#TamañoMain__Fotos{
-    height: 3200px;
-}
-
-.label--gal2020-1{
-    display: inline-block;
-    position: relative;
-    top: 47px;
-    left: 340px;
-}
-
-.label--gal2020-2{
-    display: inline-block;
-    position: relative;
-    top: 47px;
-    left: 610px;
-    margin-right: 265px;
-}
-
-.Section--Tripleimg{
-
-    position: relative;
-    top: 50px;
-}
-
-.label--gal2019-img3{
-    position: relative;
-    top: -29.5px;
-}
-
-.label--gal2019-1{
-    display: inline-block;
-    position: relative;
-    top: 27px;
-    left: 95px;
-    margin-right: 160px;
-}
-
-.label--gal2019-2{
-    display: inline-block;
-    position: relative;
-    top: -33px;
-    left: 225px;
-    margin-right: 265px;
-}
-.gal2019--posic{
-    position: relative;
-    top: 21px;
 }

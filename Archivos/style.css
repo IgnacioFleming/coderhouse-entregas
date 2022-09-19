@@ -135,4 +135,24 @@ footer div{
     font-weight: 700;
 }
 
+@media screen and (min-width:768px) {
 
+     footer{
+         display: flex;
+         width: 100%;
+         
+     }
+     footer p{
+         width: 50%;
+     }
+     .footer__redes{
+         width: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         justify-self:end;
+     }
+     .submenu:hover #desplegable{
+         width: auto;
+         padding: 10px;
+     }
+ }

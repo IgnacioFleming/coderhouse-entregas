@@ -58,22 +58,4 @@ article p{
          padding: 25px;
          margin-top: 50px;
      } 
-     footer{
-         display: flex;
-         width: 100%;
-         
-     }
-     footer p{
-         width: 50%;
-     }
-     .footer__redes{
-         width: 50%;
-         display: flex;
-         justify-content: space-evenly;
-         justify-self:end;
-     }
-     .submenu:hover #desplegable{
-         width: auto;
-         padding: 10px;
-     }
  }
