@@ -29,7 +29,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header div #logo{
@@ -73,6 +72,8 @@ footer div{
 #desplegable{
     display: none;
     background-color: white;
+    height: 0px;
+    transition: height 1s;
 }
 #desplegable li{
     text-transform: capitalize;
@@ -93,6 +94,7 @@ footer div{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 .submenu{
     display: flex;
@@ -100,12 +102,22 @@ footer div{
 }
 #desplegable a{
     font-size: 20px;
+    transition: all 0s;
 }
 
 .nav__enlaces a{
     text-decoration: none;
     color: black;
     font-weight: 600;
+    transition: all 0s;
+}
+.nav__enlaces a:hover{
+    scale: 1.2;
+    color: darksalmon;
+}
+#desplegable a:hover{
+    scale: 1.2;
+    color: darksalmon;
 }
 
 .section__title{
@@ -135,6 +147,56 @@ footer div{
     font-weight: 700;
 }
 
+footer img{
+    transition: all 0.5s;
+}
+
+footer img:hover{
+    scale: 2;
+}
+
+header img{
+    transition: all 0.5s;
+}
+
+header img:hover{
+    scale: 2;
+    transform: translateY(30px);
+}
+
+/*Agrego las animaciones*/
+
+header,nav{
+    animation-duration: 1s;
+    animation-name: entrada;
+    animation-iteration-count: 1;
+}
+
+@keyframes entrada{
+    from{
+        transform: translateY(-200px)
+        
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+/*
+#desplegable{
+    animation-duration: 1.5s;
+    animation-name: desplegar;
+    animation-iteration-count: 1;
+}
+
+@keyframes desplegar {
+    from{
+        height: ;
+    }
+    to{
+        scale:1;
+    }    
+}*/
 @media screen and (min-width:768px) {
 
      footer{

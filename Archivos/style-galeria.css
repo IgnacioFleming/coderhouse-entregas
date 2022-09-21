@@ -46,6 +46,10 @@ main img{
     object-fit: contain;
     background-color: rgb(228, 220, 208);
     border: 3px solid;
+    transition: all 0.5s;
+}
+main img:hover{
+    scale: 1.1;
 }
 label{
     
@@ -64,6 +68,20 @@ main div div{
 
 main div div label{
     justify-self: flex-end;
+}
+
+main{
+    animation-duration: 1s;
+    animation-name: entrada-galeria;
+    animation-iteration-count: 1;
+}
+@keyframes entrada-galeria {
+    from{
+        transform: translateY(-1500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }
 
 @media screen and (min-width:768px) {

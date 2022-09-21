@@ -40,6 +40,39 @@ article p{
     padding: 15px;
 }
 
+/*Agrego las animaciones*/
+
+article p,article h2{
+    animation-duration: 1.5s;
+    animation-name: entrada-parrafo;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes entrada-parrafo{
+    from{
+        transform: translateX(-800px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+aside img{
+    animation-duration: 1.5s;
+    animation-name: entrada-imagen;
+    animation-iteration-count: 1;
+}
+@keyframes entrada-imagen {
+    from{
+        transform: translateX(1000px) rotate(90deg);
+    }
+    to{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
 @media screen and (min-width:768px) {
 
     #grid{ 
@@ -59,3 +92,5 @@ article p{
          margin-top: 50px;
      } 
  }
+
+ 
