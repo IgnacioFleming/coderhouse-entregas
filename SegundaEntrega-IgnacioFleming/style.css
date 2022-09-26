@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(background-img.jpg);
+    background-image: url(./Imagenes/background-img.jpg);
 }
 
 nav ul{
@@ -72,7 +72,6 @@ footer div{
 #desplegable{
     display: none;
     background-color: white;
-    height: 0px;
     transition: height 1s;
 }
 #desplegable li{
@@ -89,8 +88,8 @@ footer div{
 .submenu:hover #desplegable {
     position: absolute;
     margin-top: 25px;
-    height: 400px;
     width:50%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -182,21 +181,21 @@ header,nav{
         transform: translateY(0px);
     }
 }
-/*
-#desplegable{
-    animation-duration: 1.5s;
+
+.submenu:hover #desplegable{
+    animation-duration: 0.5s;
     animation-name: desplegar;
     animation-iteration-count: 1;
 }
 
 @keyframes desplegar {
     from{
-        height: ;
+        height: 0px;
     }
     to{
-        scale:1;
+        height: 300px;
     }    
-}*/
+}
 @media screen and (min-width:768px) {
 
      footer{
