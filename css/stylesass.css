@@ -5,31 +5,6 @@
 body {
   background-image: url(./Imagenes/background-img.jpg); }
 
-nav {
-  width: 100%;
-  height: 100%;
-  background-color: white; }
-  nav ul {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    list-style: none;
-    grid-area: navegacion; }
-    nav ul #desplegable {
-      display: none;
-      background-color: white;
-      transition: height 1s; }
-      nav ul #desplegable ul#desplegable li {
-        text-transform: capitalize;
-        font-size: 12px;
-        font-weight: 400; }
-        nav ul #desplegable ul#desplegable li a {
-          text-decoration: none;
-          color: black; }
-
 header {
   grid-area: logo;
   background-color: white;
@@ -44,6 +19,57 @@ header {
     object-fit: contain;
     max-width: 100px;
     background-color: white; }
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  grid-area: navegacion; }
+  nav ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    list-style: none; }
+    nav ul #desplegable {
+      display: none;
+      background-color: white;
+      transition: height 1s; }
+      nav ul #desplegable li {
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: 400; }
+        nav ul #desplegable li a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          transition: all 0s; }
+          nav ul #desplegable li a:hover {
+            scale: 1.2;
+            color: darksalmon; }
+
+.submenu {
+  display: flex;
+  flex-direction: column; }
+  .submenu:hover #desplegable {
+    position: absolute;
+    margin-top: 25px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+
+.nav__enlaces a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: all 0s; }
+  .nav__enlaces a:hover {
+    scale: 1.2;
+    color: darksalmon; }
 
 footer {
   grid-area: footer;
@@ -60,40 +86,10 @@ footer {
   font-size: small;
   font-weight: bolder;
   font-style: italic; }
-  footer div {
-    display: flex;
-    justify-content: space-evenly; }
 
-.submenu:hover #desplegable {
-  position: absolute;
-  margin-top: 25px;
-  width: 50%;
-  height: 300px;
+footer div {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly; }
-
-.submenu {
-  display: flex;
-  flex-direction: column; }
-
-#desplegable a {
-  font-size: 20px;
-  transition: all 0s; }
-
-.nav__enlaces a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  transition: all 0s; }
-
-.nav__enlaces a:hover {
-  scale: 1.2;
-  color: darksalmon; }
-
-#desplegable a:hover {
-  scale: 1.2;
-  color: darksalmon; }
 
 .section__title {
   text-align: center;

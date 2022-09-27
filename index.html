@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/pruebacss.css">
-    <title>Document</title>
+    <title>Manuela Fleming Arte | Home</title>
+    <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/stylesass.css">
+    <link rel="stylesheet" href="style-home.css">
 </head>
-<body>
-    <div>Mi Pagina</div>
+<body id="grid">
+    <header>
+        <div>
+        <img id="logo" src="./Iconos/Logo.png" alt="Logo">
+        </div>
+    </header>
+    <nav>
+        <ul class="encabezadosFuente nav__enlaces">
+            <li><a href="index.html">Home</a></li>
+            <li class="submenu"><a  href="galeria.html">Galeria</a>
+                <ul id="desplegable">
+                    <li><a href="galeria.html#statement">Statement: Mi Piel</a></li>
+                    <li><a href="galeria.html#gal-2022">Colección 2022</a></li>
+                    <li><a href="galeria.html#gal-2021">Colección 2021</a></li>
+                    <li><a href="galeria.html#gal-2020">Colección 2020</a></li>
+                    <li><a href="galeria.html#gal-2019">Colección 2019</a></li>
+                </ul>
+            </li>
+            <li><a href="expo.html">Expos</a></li>
+            <li><a href="biografia.html">Biografia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>            
+        </ul>
+    </nav>
+    <article>
+        <h2 class="section__title cuerpoFuente--main">Statement</h2>
+        <p class="section__body cuerpoFuente">
+            Me preocupa no conocerme, <br>
+            No conocer el lunar nuevo que me salió,
+            No saber porqué surgió un moretón,
+            Que zapato o situación me habrá creado ese callo
+            O porque no recuerdo esa cicatriz en la rodilla
+            Me preocupa mi cambio,
+            La transformación que todo ser humano vive en esta vida.
+            Lo busco en mi piel y lo busco en la tuya
+            Creo que mientras más te registro más sabré sobre mi
+            Quizás no me atrevo a verme del todo
+            Me pregunto porque te tratan distinto me pregunto porque a mi también. <br>
+            ¿Qué tiene mi piel que no tiene la tuya ?
+            ¿Qué tiene la tuya que creo verme a mi también ?
+                
+        </p>
+    </article>
+    <aside>
+        <img src="./Imagenes/Statement-photo.jpeg" alt="Imagen">
+    </aside>
+    
+    <footer class="encabezadosFuente">
+        <p>
+            "El Arte habla donde las palabras son incapaces de explicar."
+        </p>
+        <div class="footer__redes">
+            <img src="./Iconos/IconoFB.png" alt="Logo Facebook" title="Siguenos en Facebook" width="25" height="25">
+            <img src="./Iconos/icono-instagram.png" alt="Logo Instagram" title="Siguenos en Instagram" width="25" height="25">
+            <img src="./Iconos/IconoWP.png" alt="Logo Whatsapp" title="Escribenos en Whatsapp" width="25" height="25">
+        </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+
 </body>
 </html>
