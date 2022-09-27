@@ -1,8 +1,0 @@
-div {
-  width: 25%;
-  height: 400px;
-  background-color: burlywood;
-  margin-left: 37.5%;
-  text-align: center; }
-  div:hover {
-    background-color: lightgreen; }
