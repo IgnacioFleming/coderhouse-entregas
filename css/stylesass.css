@@ -8,67 +8,8 @@
 .font-body, .section__body {
   color: #383838; }
 
-#grid {
-  display: grid;
-  height: 100%;
-  grid-template-areas: "logo" "navegacion" "aside" "article" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 120px 100px 1fr 1fr 150px;
-  justify-items: center;
-  align-items: center; }
-
-aside {
-  grid-area: aside;
-  display: flex; }
-  aside img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    min-width: 330px;
-    animation-duration: 1.5s;
-    animation-name: entrada-imagen;
-    animation-iteration-count: 1; }
-
-article {
-  grid-area: article;
-  display: flex;
-  flex-direction: column;
-  max-width: 1080px;
-  gap: 30px; }
-  article p {
-    text-align: justify;
-    line-height: 30px;
-    padding: 15px;
-    animation-duration: 1.5s;
-    animation-name: entrada-parrafo;
-    animation-iteration-count: 1; }
-  article h2 {
-    animation-duration: 1.5s;
-    animation-name: entrada-parrafo;
-    animation-iteration-count: 1; }
-
-/*Agrego las animaciones*/
-@keyframes entrada-parrafo {
-  from {
-    transform: translateX(-800px); }
-  to {
-    transform: translateX(0px); } }
-
-@keyframes entrada-imagen {
-  from {
-    transform: translateX(1000px) rotate(90deg); }
-  to {
-    transform: translateX(0px) rotate(0deg); } }
-
-@media screen and (min-width: 768px) {
-  #grid {
-    grid-template-areas: "logo navegacion" "article aside" "footer footer";
-    grid-template-rows: 150px auto 150px;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px; }
-  article, aside, header, nav {
-    padding: 25px;
-    margin-top: 50px; } }
+.font-img {
+  color: #e4dcd0; }
 
 * {
   margin: 0;

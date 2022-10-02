@@ -8,7 +8,8 @@ $font-title: italic 700 40px 'Merriweather', serif;
 $font-footer: italic bolder 15px 'Source Serif Pro', serif ;
 $family-encabezado:'Merriweather', serif;
 $family-body:'Source Serif Pro', serif;
-$font-colors:(black:black,title:rgb(73, 73, 73),body:rgb(56, 56, 56));
+$borde-img:3px solid;
+$font-colors:(black:black,title:rgb(73, 73, 73),body:rgb(56, 56, 56),img:rgb(228, 220, 208));
 @each $name-color,$color in $font-colors{
     .font-#{$name-color}{
         color:$color;
