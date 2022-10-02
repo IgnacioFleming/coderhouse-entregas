@@ -1,11 +1,12 @@
 @import "vars-gral";
+@import "style-home";
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-image: url(./Imagenes/background-img.jpg);
+    background-image: url(../Imagenes/background-img.jpg);
 }
 
 header{
@@ -70,7 +71,7 @@ nav{
 .nav__enlaces a{
     font: $font-nav;
     text-decoration: none;
-    color: black;
+    color: map-get($font-colors, black );
     transition: all 0s;
     
 }
@@ -99,28 +100,25 @@ footer{
     }
 }
 .section__title{
+    @extend .font-title;
     text-align: center;
-    font-size: xx-large;
-    color: rgb(73, 73, 73);
+    font:$font-title;
 }
 .section__body{ 
-    font-size: 15px;
-    color: rgb(56, 56, 56);
-    font-weight: 550;
+    @extend .font-body;
+    font:$font-body;
 }
 .encabezadosFuente{
-    font-family: 'Merriweather', serif;
+    font-family: $family-encabezado;
 }
 
 .cuerpoFuente{
-    font-family: 'Source Serif Pro', serif;
+    font-family: $family-body;
 
 }
 
 .cuerpoFuente--main{
-    font-family: 'Source Serif Pro', serif;
-    font-size:40px;
-    font-weight: 700;
+    font:$font-title;
 }
 
 /*Agrego las animaciones*/
