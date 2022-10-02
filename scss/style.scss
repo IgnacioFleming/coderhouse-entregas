@@ -1,3 +1,4 @@
+@import "vars-gral";
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +10,8 @@ body{
 
 header{
     grid-area: logo;
-    background-color: white;
-    width: 100%;
-    height: 100%;
+    background-color: $menuColor;
+    @include boxsize($full-size,$full-size);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,52 +20,46 @@ header{
         width: auto;
         object-fit:contain;
         max-width: 100px;
-        background-color:rgb(255, 255, 255);
-    }
-}
-nav{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    grid-area: navegacion;
-    ul{
-        display: flex;
-        height: 100%;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 20px;
-        list-style: none;
-        #desplegable{
-            display: none;
-            background-color: white;
-            transition: height 1s;
-            li{
-                text-transform: capitalize;
-                font-size: 12px;
-                font-weight: 400;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    font-size: 20px;
-                    transition: all 0s;
-                    &:hover{
-                        scale: 1.2;
-                        color: darksalmon;
-                    }
-                }
-            }
-            
+        background-color:$menuColor;
+        transition: all 0.5s;
+        &:hover{
+            scale: 2;
+            transform: translateY(30px);
         }
     }
 }
+nav{
+    @include boxsize($full-size,$full-size);
+    background-color: $menuColor;
+    grid-area: navegacion;
+    ul{
+        display: flex;
+        @include boxsize($full-size,$full-size);
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        text-transform: capitalize;
+        #desplegable{
+            display: none;
+            background-color: $menuColor;
+        }   
+        a{
+            text-decoration: none;
+            transition: all 0s;
+            &:hover{
+                color: $font-hover;
+            }
+        }
+            
+        }
+    }
 .submenu{
     display: flex;
     flex-direction: column;
     &:hover #desplegable {
         position: absolute;
         margin-top: 25px;
-        width:50%;
+        width:$full-size/2;
         height: 300px;
         display: flex;
         flex-direction: column;
@@ -74,52 +68,45 @@ nav{
     }
 }
 .nav__enlaces a{
+    font: $font-nav;
     text-decoration: none;
     color: black;
-    font-weight: 600;
     transition: all 0s;
-    &:hover{
-        scale: 1.2;
-        color: darksalmon;
-    }
+    
 }
 
 footer{
     grid-area: footer;
-    background-color: rgb(255, 255, 255);
+    background-color: $menuColor;
     /*background-color: #FDEEDC;*/
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: $full-size;
     grid-template-rows: 1fr 1fr;
-    height: 100%;
-    width: 100%;
+    @include boxsize($full-size,$full-size);
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-style: italic;
+    font: $font-footer;
+    div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    img{
+        transition: all 0.5s;
+        &:hover{
+            scale: 2;
+        }
+    }
 }
-
-
-footer div{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-
 .section__title{
     text-align: center;
     font-size: xx-large;
     color: rgb(73, 73, 73);
 }
-.section__body{
-   
+.section__body{ 
     font-size: 15px;
     color: rgb(56, 56, 56);
     font-weight: 550;
-
 }
 .encabezadosFuente{
     font-family: 'Merriweather', serif;
@@ -134,23 +121,6 @@ footer div{
     font-family: 'Source Serif Pro', serif;
     font-size:40px;
     font-weight: 700;
-}
-
-footer img{
-    transition: all 0.5s;
-}
-
-footer img:hover{
-    scale: 2;
-}
-
-header img{
-    transition: all 0.5s;
-}
-
-header img:hover{
-    scale: 2;
-    transform: translateY(30px);
 }
 
 /*Agrego las animaciones*/
@@ -190,14 +160,14 @@ header,nav{
 
      footer{
          display: flex;
-         width: 100%;
+         width: $full-size;
+         p{
+            width: $full-size/2;
+        }
          
      }
-     footer p{
-         width: 50%;
-     }
      .footer__redes{
-         width: 50%;
+         width: $full-size/2;
          display: flex;
          justify-content: space-evenly;
          justify-self:end;

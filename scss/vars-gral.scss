@@ -1,0 +1,20 @@
+/* Variables del proyecto */
+$full-size: 100%;
+$menuColor: white;
+$font-nav: 600 20px 'Merriweather';
+$font-hover: darksalmon;
+$font-body:  550 15px;
+$font-title: 40px 700 'Source Serif Pro';
+$font-footer: small bolder italic;
+$family-encabezado:'Merriweather', serif;
+$family-body:'Source Serif Pro', serif;
+$font-colors:(black:black,title:rgb(73, 73, 73),body:rgb(56, 56, 56));
+@each $name-color,$color in $font-colors{
+    .font-#{$name-color}{
+        color:$color;
+    }
+}
+@mixin boxsize($width,$height){
+    width: $width;
+    height: $height;
+}
