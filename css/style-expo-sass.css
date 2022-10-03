@@ -1,0 +1,60 @@
+/* Variables del proyecto */
+.font-black {
+  color: black; }
+
+.font-title {
+  color: #494949; }
+
+.font-body {
+  color: #383838; }
+
+.font-img {
+  color: #e4dcd0; }
+
+#grid {
+  display: grid;
+  grid-template-areas: "header" "navigation" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 120px 100px auto 150px; }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: navigation; }
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  main h1 {
+    text-align: center;
+    font: italic 700 40px "Merriweather", serif;
+    color: #494949; }
+
+footer {
+  grid-area: footer; }
+
+#carousel2 img {
+  height: 300px;
+  object-fit: contain;
+  background-color: #e4dcd0; }
+
+@media screen and (min-width: 768px) {
+  #grid {
+    display: grid;
+    grid-template-areas: "header navigation" "main main" "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px auto 150px; }
+  #carousel1 {
+    width: 50%; }
+  #carousel2 {
+    width: 50%; }
+    #carousel2 img {
+      height: 600px; } }
