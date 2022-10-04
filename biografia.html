@@ -6,42 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuela Fleming Arte | Biografia</title>
     <link rel="shortcut icon" href="favicon.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-bio.css">
+    <link rel="stylesheet" href="./css/stylesass.css">
+    <link rel="stylesheet" href="./css/style-bio-sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="grid">
     <header>
-        <div><img width="50px" height="50px" src="Logo.png" alt="Logo"></div>
-        <nav>
-            <ul class="EncabezadosFuente nav__enlaces">
-                <li><a href="index.html">Home</a></li>
-                <li class="submenu"><a  href="galeria.html">Galeria</a>
-                    <ul id="desplegable">
-                        <li><a href="galeria.html#statement">Statement: Mi Piel</a></li>
-                        <li><a href="galeria.html#gal-2022">Colección 2022</a></li>
-                        <li><a href="galeria.html#gal-2021">Colección 2021</a></li>
-                        <li><a href="galeria.html#gal-2020">Colección 2020</a></li>
-                        <li><a href="galeria.html#gal-2019">Colección 2019</a></li>
-                    </ul>
-                </li>
-                <li><a href="expo.html">Expos</a></li>
-                <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>            
-            </ul>
-        </nav>
-    </header>
-
-    <main class="tamaño-bio">
         <div>
-            <img class="fotoBio" src="foto-bio.jpg" alt="Foto Manuela Fleming" title="Manuela Fleming | Artista" id="photo">
-            <label class="bio--label" for="photo">Manuela Fleming | Artista</label>
+        <img id="logo" src="./Iconos/Logo.png" alt="Logo">
         </div>
-        <h1 class="Section__Title CuerpoFuente--Main">Biografía</h1>
-        <span>
-        <p class="Section__Body CuerpoFuente">Manuela Fleming nació en la provincia de Salta Capital, en 1996. Actualmente reside y trabaja en Buenos Aires. 
+    </header>
+    <nav>
+        <ul class="encabezadosFuente nav__enlaces">
+            <li><a href="index.html">Home</a></li>
+            <li class="submenu"><a  href="galeria.html">Galeria</a>
+                <ul id="desplegable">
+                    <li><a href="galeria.html#statement">Statement: Mi Piel</a></li>
+                    <li><a href="galeria.html#gal-2022">Colección 2022</a></li>
+                    <li><a href="galeria.html#gal-2021">Colección 2021</a></li>
+                    <li><a href="galeria.html#gal-2020">Colección 2020</a></li>
+                    <li><a href="galeria.html#gal-2019">Colección 2019</a></li>
+                </ul>
+            </li>
+            <li><a href="expo.html">Expos</a></li>
+            <li><a href="biografia.html">Biografia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>            
+        </ul>
+    </nav>  
+
+    <main>
+        <div>
+            <img  src="./Imagenes/foto-bio.jpg" alt="Foto Manuela Fleming" title="Manuela Fleming | Artista">
+            <span><label for="photo">Manuela Fleming | Artista</label></span>
+        </div>
+        <h1 class="section__title cuerpoFuente--main">Biografía</h1>
+        <p class="section__body cuerpoFuente">Manuela Fleming nació en la provincia de Salta Capital, en 1996. Actualmente reside y trabaja en Buenos Aires. 
             Se formó como Licenciada en Artes Visuales en la “Universidad del Museo Social Argentino” (2014-2019) con orientación en pintura. En los años 2017 y 2018 expuso en la misma para la “Noche de los Museos” con su obra “Trascender” y el proyecto colectivo “Retrato por correspondencia” a cargo de Andrea Racciatti.
             Asistió al taller de Bernardo Kehoe (2018) y al de Carolina Antoniadis (2019) para profundizar sus conocimientos sobre la pintura.
             En el 2019, realizó en paralelo un seminario-clínica “Afilar la obra” junto a Margarita García Faure y Marion Hauvette; y su Tesis de grado acompañada de la tutoría de Alejandra Mizrahi. De allí, surgió “Tangere”, una instalación textil interactiva, que luego fue expuesta, junto con cuarenta artistas en la muestra “Afilar la obra” (Hipólito Yrigoyen 840, Caba).
@@ -50,19 +51,16 @@
             A comienzos del 2021 realizó su primera residencia artística en R.A.R.O (Residencias Artísticas Raramente Organizadas) con media beca otorgada. A fines de año, realizó la “Muestra colectiva de fin de Residencia” curada por Mariana Rodríguez Iglesias en Espacio Belgrado (Av. Belgrano 2913, Caba). 
             Actualmente se encuentra trabajando en R.A.R.O a cargo de la producción general y como asistente en comunicación. También, ejerce como docente en talleres de dibujo, pintura y experimentación textil, además del desarrollo de su propia obra.
         </p>
-        </span>
-
-
     </main>
 
-    <footer class="EncabezadosFuente">
-        <p class="margen0 Footer__Texto ">
+    <footer class="encabezadosFuente">
+        <p>
             "El Arte habla donde las palabras son incapaces de explicar."
         </p>
-        <div class="Footer__Redes">
-            <img class="Redes__Espaciado" src="IconoFB.png" alt="Logo Facebook" title="Siguenos en Facebook" width="25" height="25">
-            <img class="Redes__Espaciado" src="icono-instagram.png" alt="Logo Instagram" title="Siguenos en Instagram" width="25" height="25">
-            <img class="Redes__Espaciado" src="IconoWP.png" alt="Logo Whatsapp" title="Escribenos en Whatsapp" width="25" height="25">
+        <div class="footer__redes">
+            <img src="./Iconos/IconoFB.png" alt="Logo Facebook" title="Siguenos en Facebook" width="25" height="25">
+            <img src="./Iconos/icono-instagram.png" alt="Logo Instagram" title="Siguenos en Instagram" width="25" height="25">
+            <img src="./Iconos/IconoWP.png" alt="Logo Whatsapp" title="Escribenos en Whatsapp" width="25" height="25">
         </div>
     </footer>
     
