@@ -1,0 +1,70 @@
+@import "vars-gral";
+#grid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer"
+    ;
+    grid-template-columns: $full-size;
+    grid-template-rows: 120px 100px auto 150px;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: navigation;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @include boxsize($full-size,$full-size);
+    align-items: center;
+    h1{
+        padding: 20px;
+        text-align: center;
+        @extend .font-title;
+        font: $font-title;
+        font-size: 35px;
+    }
+    fieldset{
+        border-style: solid;
+        border-width: 10px;
+        border-color: map-get($font-colors, body);
+        legend{
+            @extend .font-body;
+            font: $font-body;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 10px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            @extend .font-body;
+            font: $font-body;
+            justify-content: center;
+            text-align: center;
+            }
+            input{
+                height: 30px;
+            }
+    }
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+

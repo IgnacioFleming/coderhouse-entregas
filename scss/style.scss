@@ -79,9 +79,7 @@ footer{
     grid-area: footer;
     background-color: $menuColor;
     /*background-color: #FDEEDC;*/
-    display: grid;
-    grid-template-columns: $full-size;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     @include boxsize($full-size,$full-size);
     justify-content: center;
     align-items: center;

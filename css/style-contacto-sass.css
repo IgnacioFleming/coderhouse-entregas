@@ -1,0 +1,62 @@
+/* Variables del proyecto */
+.font-black {
+  color: black; }
+
+.font-title, main h1 {
+  color: #494949; }
+
+.font-body, main fieldset legend, main fieldset div {
+  color: #383838; }
+
+.font-img {
+  color: #e4dcd0; }
+
+#grid {
+  display: grid;
+  grid-template-areas: "header" "navigation" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 120px 100px auto 150px; }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: navigation; }
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 100%;
+  align-items: center; }
+  main h1 {
+    padding: 20px;
+    text-align: center;
+    font: italic 700 40px "Merriweather", serif;
+    font-size: 35px; }
+  main fieldset {
+    border-style: solid;
+    border-width: 10px;
+    border-color: #383838; }
+    main fieldset legend {
+      font: 550 20px "Source Serif Pro", serif; }
+    main fieldset form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 10px; }
+    main fieldset div {
+      display: flex;
+      flex-direction: column;
+      font: 550 20px "Source Serif Pro", serif;
+      justify-content: center;
+      text-align: center; }
+    main fieldset input {
+      height: 30px; }
+
+footer {
+  grid-area: footer; }
