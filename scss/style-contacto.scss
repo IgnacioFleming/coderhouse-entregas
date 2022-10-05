@@ -45,26 +45,50 @@ main{
         form{
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 40px;
             padding: 10px;
-        }
-        div{
-            display: flex;
-            flex-direction: column;
-            @extend .font-body;
-            font: $font-body;
-            justify-content: center;
-            text-align: center;
-            }
+            div{
+                display: flex;
+                flex-direction: column;
+                @extend .font-body;
+                font: $font-body;
+                justify-content: center;
+                text-align: center;
+                }
             input{
                 height: 30px;
             }
+            #button{
+                width: 80px;
+                margin-bottom: 30px;
+            }
+        }
     }
 }
 footer{
     grid-area: footer;
 }
-
+@media screen and (min-width:768px) {
+    
+    #grid{
+        display: grid;
+        grid-template-areas: 
+            "header navigation"
+            "main main"
+            "footer footer"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 120px auto 150px;
+    }
+    form{
+        width: 800px;
+        div{
+            width: $full-size*0.8;
+            
+        }
+    }
+}
 
 
 
