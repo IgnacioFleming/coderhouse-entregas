@@ -84,14 +84,16 @@ footer{
     background-color: $menuColor;
     /*background-color: #FDEEDC;*/
     display: flex;
+    flex-direction: column;
     @include boxsize($full-size,$full-size);
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     font: $font-footer;
     div{
         display: flex;
         justify-content: space-evenly;
+        width: $full-size;
     }
     img{
         transition: all 0.5s;
@@ -152,6 +154,7 @@ header,nav{
 
      footer{
          display: flex;
+         flex-direction: row;
          width: $full-size;
          p{
             width: $full-size/2;
